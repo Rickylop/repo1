@@ -1,0 +1,91 @@
+COMANDOS GIT:
+
+
+ver estados de archivo
+git status (En rojo los que no estan en stage y en verde los que si)
+
+Agregar todos los archivos al stage
+git add .
+git add -A
+git add --all
+
+Adicionar al Stage un archivo determinado
+git add archivo
+
+Marcacion en el tiempo
+git commit -m "Descripcion del cambio"
+
+Cambiar descripcion de la marcacion
+git  commit --amend -m "Nueva descripcion"
+
+Ver Historico de las marcaciones en el tiempo
+git log
+
+cuando queremos cambiar el nombre de un archivo el cual ya tiene marcacion en el tiempo
+git mv nombreActul nuevoNombre
+
+Registrar en git el borrado de un archivo
+git rm ArchivoABorrarX
+git status
+git commit -m "se borro arcchivoX"
+
+Recuperar archivo borrardo
+git reset --soft ID	(Se posiciona en el cambio del ID indicado)
+git reset --hard ID	(Recupera los cambios del ID indicado)
+
+git reflog	(ver todo el registro de log, asi se halla realizado reset hard) Muestra todos los commit
+
+Volver a un commit especifico
+Tomamos el primer ID del reflog y digitamos
+git reset --hard ID
+
+
+
+con (q) salgo de la revision del log
+
+Quitar archivo del stage
+git reset
+git reset --mixed ID (saca los cambios del stage despues del ID indicado)
+
+
+Otras opciones del compando git
+git help
+o git help comando
+
+alias a los comandos
+git config --global alias.s "status"
+git config --global alias.l "log"
+
+
+Ignorar archivos en GIT
+se debe crear un archivo .gitignore al mismo nivel del archivo principal .get
+dentro de este archivo se pueden indicar los archivos a ignorar o un directoria a ignorar
+ide-config* (ignora todos los archivos que inicien con ide-config)
+/config/	(ingnora todo lo este dentro de la carpeta config)
+
+
+Creacion de nueva rama
+git branch NombreNuevaRama
+
+Mostrar mas graficamente donde nos encontramos indicando las ramas
+git log --online --decorate --all --graph
+
+Cambiar de rama
+git checkout NombreNuevaRama
+
+Unir nueva rama con rama MASTER
+ubicados en la rama Master (git checkout master)
+git merge NombreNuevaRama
+
+Borra rama creada anteriormente ya que se integro con la principal
+git branch -d NombreNuevaRama
+
+Crear nueva rama y ubicarnos en ella
+git checkout -b rama_opcion
+
+
+
+
+
+
+
