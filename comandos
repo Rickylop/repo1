@@ -4,6 +4,9 @@ COMANDOS GIT:
 ver estados de archivo
 git status (En rojo los que no estan en stage y en verde los que si)
 
+
+git clean (se utiliza para eliminar archivos no deseados de tu directorio de trabajo)
+
 Agregar todos los archivos al stage
 git add .
 git add -A
@@ -84,9 +87,11 @@ Crear nueva rama y ubicarnos en ella
 git checkout -b rama_opcion
 
 
+git diff (muestra las diferencias entre ramos o entre el area de trabajo y el stage (por defecto))
+
 
 GitHub
-�or create a new repository on the command line
+..or create a new repository on the command line
  echo "# repo1" >> README.md
 git init
 git add README.md
@@ -94,7 +99,7 @@ git commit -m "first commit"
 git remote add origin https://github.com/Rickylop/repo1.git
 git push -u origin master
 
-�or push an existing repository from the command line
+...or push an existing repository from the command line
  git remote add origin https://github.com/Rickylop/repo1.git
 git push -u origin master
 
