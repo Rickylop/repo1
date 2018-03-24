@@ -86,7 +86,7 @@ git checkout -b rama_opcion
 
 
 GitHub
-Öor create a new repository on the command line
+ÔøΩor create a new repository on the command line
  echo "# repo1" >> README.md
 git init
 git add README.md
@@ -94,13 +94,27 @@ git commit -m "first commit"
 git remote add origin https://github.com/Rickylop/repo1.git
 git push -u origin master
 
-Öor push an existing repository from the command line
+ÔøΩor push an existing repository from the command line
  git remote add origin https://github.com/Rickylop/repo1.git
 git push -u origin master
 
 
 Traer repositorio de GitHub
 git clon e https://Ruta en github
+
+TRABAJAR CON REMOTOS
+git remote -v (Mostrara los nombres de cada remoto con su respectiva ruta)
+git clone Ruta (el nombre del remoto por defecto sera origin)
+git remote add [nombre] [url] (Adicionar repositorios remotos)
+git fetch (se traer√° todos los datos que aun no tienes de dicho remoto y se referenciaran todas las ramas del remoto)
+git pull (para traer y combinar autom√°ticamente la rama remota con tu rama actual)
+git push [nombre-remoto] [nombre-rama] (Enviar a tus remotos)
+git remote show [nombre-remoto] (Inspecionar a un remoto)
+git remote rename [nombre-actual] [nuevo-nombre]
+git remote rm [nombre-Remoto]
+
+
+
 
 
 
